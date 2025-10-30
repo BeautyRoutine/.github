@@ -1,0 +1,37 @@
+name: Organization CI Template
+
+on:
+    push:
+        branches: [main, develop]
+    pull_request:
+        branches: [main, develop]
+
+jobs:
+    check:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: Detect project type
+              run: |
+                  if [ -f "package.json" ]; then
+                    echo "type=react" >> $GITHUB_ENV
+                  elif [ -f "pom.xml" ]; then
+                    echo "type=spring" >> $GITHUB_ENV
+                  else
+                    echo "type=unknown" >> $GITHUB_ENV
+                  fi
+
+            - name: Run build
+              run: |
+                  if [ "$type" = "react" ]; then
+                    echo "🧱 Building React project..."
+                    npm install
+                    npm run build
+                  elif [ "$type" = "spring" ]; then
+                    echo "☕ Building Spring Boot project..."
+                    mvn -B clean package -DskipTests
+                  else
+                    echo "❓ Unknown project type, skipping build."
+                  fi

@@ -1,53 +1,66 @@
-# 실구매 인증 기반 뷰티 후기 & 리워드 플랫폼
+# BeautyRoutine Organization
 
-> 광고성 후기 없이 **신뢰성 있는 소비자 후기**와 **개인 맞춤형 화장품 추천**을 제공하는 뷰티 플랫폼입니다.
-
----
-
-## 프로젝트 개요
-- 후기 신뢰도 검증 (구매 인증 / 사용 인증 기반)
-- 사용자 피부 데이터 기반 맞춤형 추천
-- 후기 작성 시 리워드 지급 및 챌린지 시스템
-- 계절별 / 트렌드별 메인 배너 자동 갱신
+> **Routy 프로젝트**를 중심으로  
+> 신뢰할 수 있는 후기 데이터를 기반으로 한 **개인 맞춤형 화장품 추천 플랫폼**을 개발합니다.
 
 ---
 
-## 기술 스택
-- **Frontend:** React  
-- **Backend:** Spring Boot, JPA  
-- **Database:** Oracle  
-- **Build Tool:** Maven  
-- **Collaboration:** GitHub, Notion, Figma, Discord
+## 💡 프로젝트 개요
+
+-   실구매 인증 기반의 **후기 신뢰도 검증 시스템**
+-   사용자 피부 정보 및 성분 데이터를 통한 **맞춤형 화장품 추천**
+-   후기 작성 및 챌린지 참여 시 **리워드 시스템** 제공
+-   계절별·트렌드별 **추천 배너 자동 갱신 기능**
 
 ---
 
-## 팀 구성
-- 팀장: 김지용  
-- 팀원: 김지훈, 문지용, 모란희, 박민우, 윤예주
+## 🧭 프로젝트 구조
+
+| Repository                                                            | Description                                          |
+| --------------------------------------------------------------------- | ---------------------------------------------------- |
+| [**routy-front**](https://github.com/BeautyRoutine/routy-front)       | React 기반 프론트엔드. 사용자 맞춤형 추천 및 UI 구현 |
+| [**routy-back**](https://github.com/BeautyRoutine/routy-back)         | Spring Boot 기반 백엔드. 데이터 처리 및 API 제공     |
+| [**routy-document**](https://github.com/BeautyRoutine/routy-document) | 기획, 설계, ERD, API 명세 등 기술 문서 관리          |
+| [**.github**](https://github.com/BeautyRoutine/.github)               | 조직 프로필 및 공용 설정 관리                        |
 
 ---
 
-## 프로젝트 목적
-- 후기의 **신뢰성**을 확보하여 소비자 혼란을 줄임  
-- 개인 피부타입 및 성분 데이터를 분석하여 **맞춤형 추천** 제공  
-- 후기 기반 **리워드 시스템**으로 사용자 참여율 증대  
+## ⚙️ 기술 스택
+
+-   **Frontend**: React (JavaScript, Redux, Axios, React Router)
+-   **Backend**: Spring Boot (Java 21, JPA, Security, OAuth2, JWT)
+-   **Database**: Oracle 21c
+-   **Build Tool**: Maven
+-   **Collaboration**: GitHub, Notion, Figma, Discord
 
 ---
 
-## 주요 기능
-- 후기 시스템 (텍스트/사진/영상, 신뢰도 등급)
-- 리워드 & 챌린지 시스템
-- 사용자 맞춤형 추천 기능
-- 트렌드 반영형 메인 배너
+## 🎯 프로젝트 목표
+
+-   후기의 **신뢰성 확보**를 통한 소비자 중심 뷰티 커머스 구축
+-   사용자 **피부 데이터 기반 개인화 추천**으로 구매 효율성 향상
+-   **리워드 및 챌린지 시스템**을 통한 지속적인 사용자 참여 유도
 
 ---
 
-## 개발 환경
-- IDE: VSCode, STS4  
-- DB Tool: SQL Developer
+## 👥 팀 구성
+
+-   **팀장:** 김지용
+-   **팀원:** 김지훈 · 문지용 · 모란희 · 박민우 · 윤예주
 
 ---
 
-## 저장소 목적
-> 본 저장소는 **실구매 인증 기반 뷰티 후기 플랫폼** 개발을 위한  
-> 팀 프로젝트 코드 및 문서 관리 용도로 사용됩니다.
+## 🧩 협업 환경
+
+-   **IDE**: VSCode, STS4
+-   **DB Tool**: SQL Developer
+-   **Design**: Figma
+-   **Communication**: Discord, Notion
+-   **Version Control**: Git / GitHub
+
+---
+
+## 📂 저장소 목적
+
+본 GitHub Organization은 **“실구매 인증 기반 뷰티 후기 플랫폼”** 개발을 위한  
+소스코드, 문서, 디자인, 협업 기록을 통합 관리하기 위해 사용됩니다.
